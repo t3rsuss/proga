@@ -1,78 +1,114 @@
 <!DOCTYPE html>
 <html>
+<head>
+	 <title>Калькулятор на мінімалках</title>
+	 <style>
+border-width: 0px;
+</style>
+</head>
 <body>
+	  <H1 align=center>Калькулятор на мінімалках</H1>
+  <table class="as" >
+    <div>
+   <tr>
+    <td>
+        <ol>
+            <form name="calc1">
+     	<input type ="text" name ="txtnum1"> +
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="sumValues()"> 
+	</form>
 
-<h2 align=center>Калькулятор на мінімалках</h2><hr>
+	<script type="text/javascript">
 
 
- <input id="first"/> + <input id="second"/> = <output id="plus"/>
- <button onclick="func()">Відповідь</button> <p></p>
+		function sumValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.calc1.txtnum1.value);
+			num2=Number(document.calc1.txtnum2.value);
+			res=num1+num2;
+			document.calc1.txtres.value=res;
+		}
+	</script>
 
- <script>
-    function func(){
-          var num1 = Number(document.getElementById("first").value);
-          var num2 = Number(document.getElementById("second").value);
-          var plus = num1 + num2;
 
-          document.getElementById("plus").innerHTML = plus;
-          }
- </script>
+	<form name="calc2">
+     	<input type ="text" name ="txtnum1"> -
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="minValues()"> 
+	</form>
+	<script type="text/javascript">
+
+		function minValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.calc2.txtnum1.value);
+			num2=Number(document.calc2.txtnum2.value);
+			res=num1-num2;
+			document.calc2.txtres.value=res;
+		}
+	</script>
+
+
+      <form name="calc3">
+     	<input type ="text" name ="txtnum1"> *
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="multiplicationValues()"> 
+	</form>
+	<script type="text/javascript">
+
+		function multiplicationValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.calc3.txtnum1.value);
+			num2=Number(document.calc3.txtnum2.value);
+			res=num1*num2;
+			document.calc3.txtres.value=res;
+		}
+	</script>
+
+	<form name="calc4">
+     	<input type ="text" name ="txtnum1"> /
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="divisionValues()"> 
+	</form>
+	<script type="text/javascript">
+
+		function divisionValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.calc4.txtnum1.value);
+			num2=Number(document.calc4.txtnum2.value);
+			res=num1/num2;
+			document.calc4.txtres.value=res;
+		}
+	</script>
+
+	<form name="calc5">
+     	<input type ="text" name ="txtnum1"> x^y
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="degreeValues()"> 
+	</form>
+	<script type="text/javascript">
+
+		function degreeValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.calc5.txtnum1.value);
+			num2=Number(document.calc5.txtnum2.value);
+			res=Math.pow(num1, num2);
+			document.calc5.txtres.value=res;
+		}
+	</script>
+</ol>
+    </td>
  
- 
-  <input id="first2"/> - <input id="second2"/> = <output id="minus"/>
- <button onclick="func2()">Відповідь</button> <p></p>
 
- <script>
-    function func2(){
-          var num12 = Number(document.getElementById("first2").value);
-          var num22 = Number(document.getElementById("second2").value);
-          var minus = num12 - num22;
-
-          document.getElementById("minus").innerHTML = minus;
-          }
- </script>
- 
-   <input id="first3"/> * <input id="second3"/> = <output id="umn"/>
- <button onclick="func3()">Відповідь</button> <p></p>
-
- <script>
-    function func3(){
-          var num13 = Number(document.getElementById("first3").value);
-          var num23 = Number(document.getElementById("second3").value);
-          var umn = num13 * num23;
-
-          document.getElementById("umn").innerHTML = umn;
-          }
- </script>
- 
-    <input id="first5"/> / <input id="second5"/> = <output id="dil"/>
- <button onclick="func5()">Відповідь</button> <p></p>
-
- <script>
-    function func5(){
-          var num15 = Number(document.getElementById("first5").value);
-          var num25 = Number(document.getElementById("second5").value);
-          var dil = num15 / num25;
-
-          document.getElementById("dil").innerHTML = dil;
-          }
- </script>
- 
- 
-    <input id="first4"/> в степені <input id="second4"/> = <output id="step"/>
- <button onclick="func4()">Відповідь</button> <p></p>
-
- <script>
-    function func4(){
-          var num14 = Number(document.getElementById("first4").value);
-          var num24 = Number(document.getElementById("second4").value);
-          var step =  Math.pow(num14, num24);
-
-          document.getElementById("step").innerHTML = step;
-          }
- </script>
- 
-
- 
 </body>
-</html>
+</html>	 
