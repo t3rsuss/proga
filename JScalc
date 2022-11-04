@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 align=center>Калькулятор на мінімалках</h2><hr>
+
+
+ <input id="first"/> + <input id="second"/> = <output id="plus"/>
+ <button onclick="func()">Відповідь</button> <p></p>
+
+ <script>
+    function func(){
+          var num1 = Number(document.getElementById("first").value);
+          var num2 = Number(document.getElementById("second").value);
+          var plus = num1 + num2;
+
+          document.getElementById("plus").innerHTML = plus;
+          }
+ </script>
+ 
+ 
+  <input id="first2"/> - <input id="second2"/> = <output id="minus"/>
+ <button onclick="func2()">Відповідь</button> <p></p>
+
+ <script>
+    function func2(){
+          var num12 = Number(document.getElementById("first2").value);
+          var num22 = Number(document.getElementById("second2").value);
+          var minus = num12 - num22;
+
+          document.getElementById("minus").innerHTML = minus;
+          }
+ </script>
+ 
+   <input id="first3"/> * <input id="second3"/> = <output id="umn"/>
+ <button onclick="func3()">Відповідь</button> <p></p>
+
+ <script>
+    function func3(){
+          var num13 = Number(document.getElementById("first3").value);
+          var num23 = Number(document.getElementById("second3").value);
+          var umn = num13 * num23;
+
+          document.getElementById("umn").innerHTML = umn;
+          }
+ </script>
+ 
+    <input id="first5"/> / <input id="second5"/> = <output id="dil"/>
+ <button onclick="func5()">Відповідь</button> <p></p>
+
+ <script>
+    function func5(){
+          var num15 = Number(document.getElementById("first5").value);
+          var num25 = Number(document.getElementById("second5").value);
+          var dil = num15 / num25;
+
+          document.getElementById("dil").innerHTML = dil;
+          }
+ </script>
+ 
+ 
+    <input id="first4"/> в степені <input id="second4"/> = <output id="step"/>
+ <button onclick="func4()">Відповідь</button> <p></p>
+
+ <script>
+    function func4(){
+          var num14 = Number(document.getElementById("first4").value);
+          var num24 = Number(document.getElementById("second4").value);
+          var step =  Math.pow(num14, num24);
+
+          document.getElementById("step").innerHTML = step;
+          }
+ </script>
+ 
+
+ 
+</body>
+</html>
